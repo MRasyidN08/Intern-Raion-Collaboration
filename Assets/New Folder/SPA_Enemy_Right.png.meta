@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a50b29a9b47aa144380c7c158f009919
+guid: 706aa573e2581dc4b9ee17bdd600e335
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,85 +105,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gatejapan_0
+      name: SPA_Enemy_Right_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 62
-        width: 62
-        height: 62
+        x: 15
+        y: 7
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7785c980f29776d41a2398817088bcf7
-      internalID: 1654620406
+      spriteID: 8eb45e4576392774aa2eea8db769d797
+      internalID: 599668686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gatejapan_1
+      name: SPA_Enemy_Right_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 62
-        width: 62
-        height: 62
+        x: 53
+        y: 7
+        width: 24
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f0b22a873fe35144b6c9dde60e7e7c2
-      internalID: 1700912696
+      spriteID: 0ebe292258e92c5419422e65eaa47e07
+      internalID: 1907195230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gatejapan_2
+      name: SPA_Enemy_Right_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 62
-        height: 62
+        x: 91
+        y: 7
+        width: 24
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebb3b6b8bb5b5284bbdc5fb1fcf72e97
-      internalID: 1015618709
+      spriteID: 58261d08b8b93be4d845e08e63bf9859
+      internalID: -1497010635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gatejapan_3
+      name: SPA_Enemy_Right_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 62
-        height: 62
+        x: 129
+        y: 9
+        width: 26
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88f6dcc5faa61e54aa8b1bccf0b47942
-      internalID: 1612102770
+      spriteID: 8024b0e61801c3340abb41e978baee91
+      internalID: -74118026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 13
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f673e2302db08d4c929fb57130c490e
+      internalID: 1078812454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPA_Enemy_Right_5
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 7
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7a401f2f6076e4595b6fc4bd557e50
+      internalID: -1009440543
       vertices: []
       indices: 
       edges: []
@@ -199,10 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gatejapan_0: 1654620406
-      gatejapan_1: 1700912696
-      gatejapan_2: 1015618709
-      gatejapan_3: 1612102770
+      SPA_Enemy_Right_0: 599668686
+      SPA_Enemy_Right_1: 1907195230
+      SPA_Enemy_Right_2: -1497010635
+      SPA_Enemy_Right_3: -74118026
+      SPA_Enemy_Right_4: 1078812454
+      SPA_Enemy_Right_5: -1009440543
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
