@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
     BoxCollider2D myFeet;
+    Animator myAnimator;
     float maxJump = 2;
 
     [SerializeField] float runSpeed = 5f;
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
         myFeet = GetComponent<BoxCollider2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -62,6 +64,17 @@ public class PlayerMovement : MonoBehaviour
         
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
+
+        bool isMoving = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        
+        if (isMoving)
+        {
+            myAnimator.SetBool("isRunning", true);
+        }
+        else
+        {
+            myAnimator.SetBool("isRunning", false);
+        }
     }
 
     void Flip()
