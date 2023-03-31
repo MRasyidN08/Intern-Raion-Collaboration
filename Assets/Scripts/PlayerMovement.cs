@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpPower = 5f;
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     
     void Start()
     {
@@ -27,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Run();
         Flip();
+        Trapped();
     }
 
     void OnMove(InputValue value)
@@ -53,6 +56,12 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
+    }
+    
+    void OnFire(InputValue value)
+    {
+        Instantiate(bullet, gun.position, transform.rotation);
+
     }
     
     void Run()
@@ -84,6 +93,16 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving)
         {
             transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x), 1f);
+        }
+    }
+
+    void Trapped()
+    {
+        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Trap")))
+        {
+            //health --
+            myRigidbody.velocity = new Vector2 (0f, 0f);
+            myAnimator.SetBool("isRunning", false);
         }
     }
 }
