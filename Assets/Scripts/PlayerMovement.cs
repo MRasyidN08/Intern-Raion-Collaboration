@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D myFeet;
     Animator myAnimator;
     float maxJump = 2;
+    int currentWeapon;
 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpPower = 5f;
@@ -64,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
     
     void OnFire(InputValue value)
     {
+        myAnimator.SetTrigger("Attack");
         Instantiate(bullet, gun.position, transform.rotation);
     }
     
@@ -127,6 +129,22 @@ public class PlayerMovement : MonoBehaviour
             // myAnimator.SetBool("isJumpUp", false);
             myAnimator.SetBool("isJumpDown", true);
             myAnimator.SetBool("isRunning", false);
+        }
+    }
+
+    void OnChangeWeapon()
+    {
+        if (currentWeapon == 0)
+        {
+            currentWeapon +=1;
+            myAnimator.SetLayerWeight(currentWeapon - 1, 0);
+            myAnimator.SetLayerWeight(currentWeapon, 1);
+        }
+        else
+        {
+            currentWeapon -=1;
+            myAnimator.SetLayerWeight(currentWeapon + 1, 0);
+            myAnimator.SetLayerWeight(currentWeapon - 1, 0);
         }
     }
 }

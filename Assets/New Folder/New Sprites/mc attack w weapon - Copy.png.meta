@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 74fad4738b8ceeb41b6fd33c8b57a657
+guid: 1a583788214eff649bd6505820e845a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,33 +105,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mc attack w weapon_8
+      name: mc attack w weapon - Copy_8
       rect:
         serializedVersion: 2
         x: 137
         y: 30
-        width: 90
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 1, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fe44678c2467d24db7128ceb28f8451
-      internalID: 1992719104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mc attack w weapon_10
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 28
-        width: 91
+        width: 100
         height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,71 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71c4a7ade9711704c8b31f3f92292788
-      internalID: -1433550800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mc attack w weapon_11
-      rect:
-        serializedVersion: 2
-        x: 404
-        y: 28
-        width: 93
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d181feaed583855489252c565f2799e5
-      internalID: 1843635881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mc attack w weapon_12
-      rect:
-        serializedVersion: 2
-        x: 549
-        y: 28
-        width: 91
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738e10919c3c20f4e8f8bdad193db0b4
-      internalID: 2045922453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mc attack w weapon_9
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 62
-        width: 17
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7314a6c698d2a684fbbfb3305cc10398
-      internalID: -1967751294
+      spriteID: 58ebb7112f290604298d861168ff2b4b
+      internalID: -1107683001
       vertices: []
       indices: 
       edges: []
@@ -220,19 +136,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mc attack w weapon_0: -1934422291
-      mc attack w weapon_1: -1011182434
-      mc attack w weapon_10: -1433550800
-      mc attack w weapon_11: 1843635881
-      mc attack w weapon_12: 2045922453
-      mc attack w weapon_2: 1322355874
-      mc attack w weapon_3: 436199309
-      mc attack w weapon_4: 2092335690
-      mc attack w weapon_5: 1140438963
-      mc attack w weapon_6: -374953164
-      mc attack w weapon_7: 1488849863
-      mc attack w weapon_8: 1992719104
-      mc attack w weapon_9: -1967751294
+      mc attack w weapon - Copy_0: 1702329181
+      mc attack w weapon - Copy_1: -47496787
+      mc attack w weapon - Copy_10: -39893750
+      mc attack w weapon - Copy_11: -1777332705
+      mc attack w weapon - Copy_12: 1381707991
+      mc attack w weapon - Copy_2: -411047624
+      mc attack w weapon - Copy_3: 2098619473
+      mc attack w weapon - Copy_4: -883165748
+      mc attack w weapon - Copy_5: -2097414863
+      mc attack w weapon - Copy_6: 497887239
+      mc attack w weapon - Copy_7: -128850348
+      mc attack w weapon - Copy_8: -1107683001
+      mc attack w weapon - Copy_9: 1598396686
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
