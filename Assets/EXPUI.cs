@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
-public class GainExp : MonoBehaviour
+public class EXPUI : MonoBehaviour
 {
 
     public Image Fillimage;
-    public TextMeshProUGUI TextLevel;
+    public Text TextLevel;
     public PlayerStat player;
 
     private float expAmount;
