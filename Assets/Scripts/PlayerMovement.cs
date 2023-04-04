@@ -61,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
     void OnFire(InputValue value)
     {
         Instantiate(bullet, gun.position, transform.rotation);
-
     }
     
     void Run()
