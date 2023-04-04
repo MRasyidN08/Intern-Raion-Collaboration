@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         Run();
         Flip();
         Trapped();
+        jumpAnimation();
     }
 
     void OnMove(InputValue value)
@@ -42,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
         if (myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             maxJump = 2;
+            myAnimator.SetBool("isJumpUp", false);
+            myAnimator.SetBool("isJumpDown", false);
         }
         
         if (maxJump>0)
@@ -101,6 +105,27 @@ public class PlayerMovement : MonoBehaviour
         {
             //health --
             myRigidbody.velocity = new Vector2 (0f, 0f);
+            myAnimator.SetBool("isRunning", false);
+        }
+    }
+
+    void jumpAnimation()
+    {
+        if (myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) || myRigidbody.velocity.y == 0)
+        {
+            myAnimator.SetBool("isJumpUp", false);
+            myAnimator.SetBool("isJumpDown", false);
+            return;
+        }
+        if (myRigidbody.velocity.y > 0)
+        {
+            myAnimator.SetBool("isJumpUp", true);
+            myAnimator.SetBool("isRunning", false);
+        }
+        else if (myRigidbody.velocity.y < 0 || !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            // myAnimator.SetBool("isJumpUp", false);
+            myAnimator.SetBool("isJumpDown", true);
             myAnimator.SetBool("isRunning", false);
         }
     }

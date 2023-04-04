@@ -38,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (isMoving)
         {
-            transform.localScale = new Vector2 (Mathf.Sign(myBody.velocity.x), 1f);
+            transform.localScale = new Vector2 (Mathf.Sign(myBody.velocity.x) * -1, 1f);
         }
     }
 }
