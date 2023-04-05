@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpPower = 5f;
     [SerializeField] GameObject bullet;
+    [SerializeField] GameObject sword;
     [SerializeField] Transform gun;
     
     void Start()
@@ -66,7 +67,14 @@ public class PlayerMovement : MonoBehaviour
     void OnFire(InputValue value)
     {
         myAnimator.SetTrigger("Attack");
-        Instantiate(bullet, gun.position, transform.rotation);
+        if (currentWeapon == 0)
+        {
+            Instantiate(bullet, gun.position, transform.rotation);
+        }
+        else
+        {
+            Instantiate(sword, gun.position, transform.rotation);
+        }
     }
     
     void Run()
