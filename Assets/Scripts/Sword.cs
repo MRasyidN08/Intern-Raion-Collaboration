@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    public float attackDuration = 0.5f;
+    [SerializeField] float attackDuration = 0.1f;
     private bool isAttacking = false;
 
+    void Start() {
+
+    }
+    
     void Update()
     {
         if (!isAttacking)
@@ -18,9 +22,10 @@ public class Sword : MonoBehaviour
     IEnumerator PerformMeleeAttack()
     {
         isAttacking = true;
-        GetComponent<Collider2D>().enabled = true;
+        GetComponent<CapsuleCollider2D>().enabled = true;
         yield return new WaitForSeconds(attackDuration);
-        GetComponent<Collider2D>().enabled = false;
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        Destroy(gameObject);
         isAttacking = false;
     }
 

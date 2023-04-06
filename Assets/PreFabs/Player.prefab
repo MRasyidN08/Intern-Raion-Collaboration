@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1478404324618377457}
   - component: {fileID: 1478404324618377359}
   - component: {fileID: 1478404324618377358}
-  - component: {fileID: 1478404324618377357}
   - component: {fileID: 1478404324618377356}
   - component: {fileID: 1478404324618377461}
   - component: {fileID: 1478404324618377460}
@@ -154,22 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 5
   jumpPower: 10
-  bullet: {fileID: 0}
+  bullet: {fileID: 3269860065228294539, guid: a9e81db17a1b89b438fce8657b3edd94, type: 3}
+  sword: {fileID: 2910097815878595673, guid: 595a543eabb428a44bb883c937610c28, type: 3}
   gun: {fileID: 5316294034949048444}
---- !u!114 &1478404324618377357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478404324618377355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c616c2187f325734aa81b9311fbc749c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fillBar: {fileID: 0}
-  health: 100
 --- !u!114 &1478404324618377356
 MonoBehaviour:
   m_ObjectHideFlags: 0
