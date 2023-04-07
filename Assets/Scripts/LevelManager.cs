@@ -20,6 +20,11 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(2);
     }
     
+    public void GoToShop()
+    {
+        SceneManager.LoadScene(4);
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quiting game");

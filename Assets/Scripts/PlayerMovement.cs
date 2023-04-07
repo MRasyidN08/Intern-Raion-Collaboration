@@ -13,11 +13,12 @@ public class PlayerMovement : MonoBehaviour
     Animator myAnimator;
     float maxJump = 2;
     int currentWeapon;
+    [SerializeField] bool riffleBought = false;
 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpPower = 5f;
-    [SerializeField] GameObject bullet;
     [SerializeField] GameObject sword;
+    [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
     
     void Start()
@@ -69,11 +70,11 @@ public class PlayerMovement : MonoBehaviour
         myAnimator.SetTrigger("Attack");
         if (currentWeapon == 0)
         {
-            Instantiate(bullet, gun.position, transform.rotation);
+            Instantiate(sword, gun.position, transform.rotation);
         }
         else
         {
-            Instantiate(sword, gun.position, transform.rotation);
+            Instantiate(bullet, gun.position, transform.rotation);
         }
     }
     
@@ -142,6 +143,10 @@ public class PlayerMovement : MonoBehaviour
 
     void OnChangeWeapon()
     {
+        if (riffleBought ==  false)
+        {
+            return;
+        }
         if (currentWeapon == 0)
         {
             currentWeapon +=1;
@@ -154,5 +159,10 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetLayerWeight(currentWeapon + 1, 0);
             myAnimator.SetLayerWeight(currentWeapon - 1, 0);
         }
+    }
+
+    public void BuyWeapon()
+    {
+        riffleBought = true;
     }
 }

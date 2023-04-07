@@ -458,8 +458,8 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Gun
-    m_StateMachine: {fileID: -8127571231617849474}
+    m_Name: Sword
+    m_StateMachine: {fileID: 4489353688800041192}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -470,8 +470,8 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Sword
-    m_StateMachine: {fileID: 4489353688800041192}
+    m_Name: Gun
+    m_StateMachine: {fileID: -8127571231617849474}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
