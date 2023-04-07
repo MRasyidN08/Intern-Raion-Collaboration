@@ -7,6 +7,7 @@ public class LifeCount : MonoBehaviour
 {
    public Image[] lives;
    public int livesRemaining;
+   public PlayerStat player;
 
    public void LoseLife()
    {
@@ -17,16 +18,18 @@ public class LifeCount : MonoBehaviour
         livesRemaining--;
         //hiding one image of life count
         lives[livesRemaining].enabled = false;
-
         //if we run out the lives
         if(livesRemaining == 0){
             Debug.Log("You Lost");
         }
    }
 
-   private void Update()
-   {
-        if(Input.GetKeyDown(KeyCode.Return))
+   void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
             LoseLife();
-   }
+        }
+    }
+
 }

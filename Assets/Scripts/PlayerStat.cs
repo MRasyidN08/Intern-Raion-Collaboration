@@ -5,12 +5,7 @@ using UnityEngine;
 public class PlayerStat : MonoBehaviour
 {
 
-    [SerializeField]
-    int strength=10;
-    public int Strength{
-        get{ return strength;}
-        private set {strength = value;}
-    }
+    public PlayerMovement movement;
 
     //exp
     float exp;
@@ -41,9 +36,7 @@ public class PlayerStat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("e")){
-            ApplyExp(12);
-        }
+
     }
 
     void die(){
@@ -52,15 +45,10 @@ public class PlayerStat : MonoBehaviour
 
     void levelUp(){
         this.Level +=1;
-        this.Strength +=1;
         Debug.Log("Level Up");
     }
 
-    int Attack(){
-        return this.Strength;
-    }
-
-    void ApplyExp(int value){
+    public void ApplyExp(int value){
         exp+=value;
         if(exp>=maxExp){
             levelUp();
