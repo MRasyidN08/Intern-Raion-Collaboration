@@ -29,6 +29,7 @@ public class LifeCount : MonoBehaviour
         if (other.tag == "Enemy")
         {
             LoseLife();
+            
         }
     }
 

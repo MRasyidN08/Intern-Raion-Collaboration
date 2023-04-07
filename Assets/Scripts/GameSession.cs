@@ -12,7 +12,7 @@ public class GameSession : MonoBehaviour
     
     // void Awake()
     // {
-    //     int numGameSession = FindObjectOfType<GameSession>().Length;
+    //     int numGameSession = FindObjectOfType<GameSession>().Length();
     //     if (numGameSession > 1)
     //     {
     //         Destroy(gameObject);

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bc6029edd5e0a84fa045f78011f3534
+guid: c838901e6488e4a4c8244c8e7db2500b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,64 +105,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: building_0
+      name: menuUI with load button only_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 163
-        height: 260
-      alignment: 9
-      pivot: {x: 0.5026683, y: 0.65557796}
+        x: 400
+        y: 507
+        width: 886
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9448e2874d2f3d84ab74d7f7c973de8e
-      internalID: -142397065
+      spriteID: cd651fa6ab7ee494a808903bba4883f5
+      internalID: 97738671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: building_1
+      name: menuUI with load button only_1
       rect:
         serializedVersion: 2
-        x: 183
-        y: 2
-        width: 162
-        height: 249
-      alignment: 9
-      pivot: {x: 0.49463004, y: 0.63100886}
+        x: 694
+        y: 319
+        width: 278
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b56ef79f62b31468942aac1151accd
-      internalID: 1022187760
+      spriteID: 1d744eef5f97bff4b851c8f9053781e5
+      internalID: 583259319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: building_2
+      name: menuUI with load button only_2
       rect:
         serializedVersion: 2
-        x: 374
-        y: 2
-        width: 63
-        height: 196
-      alignment: 9
-      pivot: {x: 0.49999902, y: 0.28252536}
+        x: 696
+        y: 168
+        width: 279
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0476ecd9b7166b84a82301fb279bd799
-      internalID: 1741651587
+      spriteID: 757f5c341e5b4324481730d7821b5ea7
+      internalID: 2050998886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menuUI with load button only_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 302
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e7ccf4dc295cb4aac7696e02754c98
+      internalID: -1049229943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menuUI with load button only_4
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 11
+        width: 278
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91f5c569720b0b449146012bdf0ed7f
+      internalID: 751148896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menuUI with load button only_5
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 11
+        width: 302
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7074d01c519acaf42a18fcf00e7e6738
+      internalID: -2121810652
       vertices: []
       indices: 
       edges: []
@@ -178,9 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      building_0: -142397065
-      building_1: 1022187760
-      building_2: 1741651587
+      menuUI with load button only_0: 97738671
+      menuUI with load button only_1: 583259319
+      menuUI with load button only_2: 2050998886
+      menuUI with load button only_3: -1049229943
+      menuUI with load button only_4: 751148896
+      menuUI with load button only_5: -2121810652
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

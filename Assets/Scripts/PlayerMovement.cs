@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Rigidbody2D myRigidbody;
     Vector2 moveInput;
-    Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
     BoxCollider2D myFeet;
     Animator myAnimator;

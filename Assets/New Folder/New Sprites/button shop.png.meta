@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bc6029edd5e0a84fa045f78011f3534
+guid: 2de07898e852d8f4d9050b4ff35976de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,64 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: building_0
+      name: button shop_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 163
-        height: 260
-      alignment: 9
-      pivot: {x: 0.5026683, y: 0.65557796}
+        x: 579
+        y: 650
+        width: 455
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9448e2874d2f3d84ab74d7f7c973de8e
-      internalID: -142397065
+      spriteID: 987e46846f0a79c4a92d85d435cfcda1
+      internalID: 1326910794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: building_1
+      name: button shop_1
       rect:
         serializedVersion: 2
-        x: 183
-        y: 2
-        width: 162
-        height: 249
-      alignment: 9
-      pivot: {x: 0.49463004, y: 0.63100886}
+        x: 1560
+        y: 810
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b56ef79f62b31468942aac1151accd
-      internalID: 1022187760
+      spriteID: d142a349f465102499318d7e0c3f51f8
+      internalID: 389677627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: building_2
+      name: button shop_2
       rect:
         serializedVersion: 2
-        x: 374
-        y: 2
-        width: 63
-        height: 196
-      alignment: 9
-      pivot: {x: 0.49999902, y: 0.28252536}
+        x: 0
+        y: 0
+        width: 302
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0476ecd9b7166b84a82301fb279bd799
-      internalID: 1741651587
+      spriteID: fec563fe785bf43428ec92e713a171a5
+      internalID: -80799889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button shop_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 53
+        width: 434
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4964116a99e63c241960b2859604e44f
+      internalID: -2107267039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button shop_4
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 63
+        width: 453
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b155eea45f30484fa7d650cb5a83f4b
+      internalID: -799760041
       vertices: []
       indices: 
       edges: []
@@ -178,9 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      building_0: -142397065
-      building_1: 1022187760
-      building_2: 1741651587
+      button shop_0: 1326910794
+      button shop_1: 389677627
+      button shop_2: -80799889
+      button shop_3: -2107267039
+      button shop_4: -799760041
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
