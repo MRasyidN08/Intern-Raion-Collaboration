@@ -19,7 +19,7 @@ public class LifeCount : MonoBehaviour
     public void LoseLife()
     {
         //decrease the value life
-        livesRemaining--;
+        livesRemaining = Mathf.Clamp(livesRemaining--, 0, livesRemaining);
         //hiding one image of life count
         lives[livesRemaining].enabled = false;
         //if we run out the lives

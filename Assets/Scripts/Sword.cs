@@ -33,7 +33,7 @@ public class Sword : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+            other.GetComponent<EnemyStat>().Die();
         }
     }
 }
