@@ -35,5 +35,9 @@ public class Sword : MonoBehaviour
         {
             other.GetComponent<EnemyStat>().Die();
         }
+        if (other.tag == "Boss")
+        {
+            other.GetComponent<Boss>().takeDamage(10);
+        }
     }
 }

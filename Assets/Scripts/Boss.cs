@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    public Hp_Boss hpui;
     public GameObject bulletPrefab;
     int bullet = 10;
     public float fireRate = 2f;
-    private int health = 100;
+    public int health = 100;
 
     void Start()
     {
@@ -17,6 +18,16 @@ public class Boss : MonoBehaviour
     void FireBullet()
     {
         Instantiate(bulletPrefab, transform.GetChild(0).position, Quaternion.identity);
+    }
+
+    public void takeDamage(int value)
+    {
+        health -= value;
+        // hpui.UpdateUI(health);
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
