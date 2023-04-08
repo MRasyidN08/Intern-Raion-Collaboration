@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyStat : MonoBehaviour
 {
-    [SerializeField] private int damage;
+    [SerializeField] private int damage=1;
     [SerializeField] public int HP_Enemies;
     [SerializeField] public int expValue = 10;
     private bool dead;
@@ -14,7 +14,7 @@ public class EnemyStat : MonoBehaviour
     {
         // Memberikan damage ke player
         if(collision.tag == "Player"){
-            collision.GetComponent<LifeCount>().LoseLife();
+            collision.GetComponent<LifeCount>().LoseLife(damage);
         }
     }
 
