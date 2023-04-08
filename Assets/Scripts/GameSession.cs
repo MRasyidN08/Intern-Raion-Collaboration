@@ -6,31 +6,29 @@ using TMPro;
 
 public class GameSession : MonoBehaviour
 {
-    // [SerializeField] int playerLives = 3;
-    public int score;
+    public int currentCoins = 0;
     [SerializeField] TextMeshProUGUI coins;
-    
-    // void Awake()
-    // {
-    //     int numGameSession = FindObjectOfType<GameSession>().Length();
-    //     if (numGameSession > 1)
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    //     else
-    //     {
-    //         DontDestroyOnLoad(gameObject);
-    //     }
-    // }
 
-    void Start() {
-        coins.text = score.ToString();
+    public void Start() {
+        coins.text = currentCoins.ToString();
+        currentCoins = PlayerPrefs.GetInt("coinKey");
+    }
+ 
+    public void Awake() {
+        coins.text = currentCoins.ToString();
+        currentCoins = PlayerPrefs.GetInt("coinKey");
+    }
+
+    private void Update() {
+        coins.text = currentCoins.ToString();
+        currentCoins = PlayerPrefs.GetInt("coinKey");
     }
 
     public void addCoins(int points)
     {
-        score += points;
-        coins.text = score.ToString();
+        currentCoins += points;
+        PlayerPrefs.SetInt("coinKey", currentCoins);
+        coins.text = currentCoins.ToString();
     }
 
 //     public void ProcessPlayerDeath()

@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    GameSession game;
+    
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
     }
     
-    public void LoadTutorial()
+    public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(2);
     }
     
     public void LoadGame()
@@ -22,7 +25,7 @@ public class LevelManager : MonoBehaviour
     
     public void GoToShop()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()

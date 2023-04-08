@@ -6,12 +6,13 @@ public class EnemyStat : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] public int HP_Enemies;
-    [SerializeField] public int expValue = 10;
+    [SerializeField] public float expValue = 10;
     private bool dead;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Memberikan damage ke player
         if(collision.tag == "Player"){
             collision.GetComponent<LifeCount>().LoseLife();
         }
@@ -24,10 +25,8 @@ public class EnemyStat : MonoBehaviour
         PlayerStat exp = player.GetComponent<PlayerStat>();
 
         // Menambahkan nilai XP ke komponen EXPUI
-        if (exp != null)
-        {
             exp.GainExp(expValue);
-        }
+        
         // Menghancurkan objek musuh
         Destroy(gameObject);
     }

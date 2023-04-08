@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Animator myAnimator;
     float maxJump = 2;
     int currentWeapon;
-    [SerializeField] bool riffleBought = false;
+    BuyWeapon buy;
 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpPower = 5f;
@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnChangeWeapon()
     {
-        if (riffleBought ==  false)
+        if (PlayerPrefs.GetInt("riffle") ==  0)
         {
             return;
         }
@@ -159,10 +159,5 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetLayerWeight(currentWeapon + 1, 0);
             myAnimator.SetLayerWeight(currentWeapon - 1, 0);
         }
-    }
-
-    public void BuyWeapon()
-    {
-        riffleBought = true;
     }
 }
