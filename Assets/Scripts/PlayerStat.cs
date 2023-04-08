@@ -13,7 +13,7 @@ public class PlayerStat : MonoBehaviour
     public void GainExp(int expValue)
     {
         currentExp += expValue;
-
+        Debug.Log(currentExp);
         // Jika pemain telah mencapai jumlah XP yang dibutuhkan untuk naik level
         if (currentExp >= expToLevelUp)
         {
@@ -27,5 +27,10 @@ public class PlayerStat : MonoBehaviour
         level++;
         currentExp -= expToLevelUp;
         expToLevelUp *= 2;  // Naikkan jumlah XP yang dibutuhkan untuk naik level
+    }
+
+    private void Update(){
+        if(Input.GetKeyDown(KeyCode.Return))
+        GainExp(25);
     }
 }

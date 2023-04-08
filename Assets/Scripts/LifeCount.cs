@@ -43,11 +43,11 @@ public class LifeCount : MonoBehaviour
     //     }
     // }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Return)){
-            LoseLife();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Return)){
+    //         LoseLife();
+    //     }
+    // }
 
 }

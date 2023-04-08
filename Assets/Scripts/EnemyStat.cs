@@ -6,7 +6,7 @@ public class EnemyStat : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] public int HP_Enemies;
-    [SerializeField] public float expValue = 10;
+    [SerializeField] public int expValue = 10;
     private bool dead;
 
 
@@ -20,12 +20,12 @@ public class EnemyStat : MonoBehaviour
 
     public void Die()
     {
-        // Mendapatkan objek game player dan komponen EXPUI
+        // Mendapatkan objek game player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         PlayerStat exp = player.GetComponent<PlayerStat>();
 
-        // Menambahkan nilai XP ke komponen EXPUI
-            exp.GainExp(expValue);
+        // Menambahkan nilai XP
+        exp.GainExp(expValue);
         
         // Menghancurkan objek musuh
         Destroy(gameObject);
