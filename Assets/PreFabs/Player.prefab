@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1478404324618377461}
   - component: {fileID: 1478404324618377460}
   - component: {fileID: 1343778546}
+  - component: {fileID: 1161856461}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -79,9 +80,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1387243711
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63293d693bf3c4d47abcc9c1e9525e0f, type: 3}
+  m_Sprite: {fileID: -1692742147, guid: dc6b8433d96ccf540bd0099a7c4bf440, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.24, y: 1.24}
+    oldSize: {x: 0.89, y: 1.11}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -151,10 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8379921b89c0ca47a49a1863f0162e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myRigidbody: {fileID: 0}
   runSpeed: 5
   jumpPower: 10
-  bullet: {fileID: 3269860065228294539, guid: a9e81db17a1b89b438fce8657b3edd94, type: 3}
-  sword: {fileID: 2910097815878595673, guid: 595a543eabb428a44bb883c937610c28, type: 3}
+  sword: {fileID: 8931501142770200900, guid: 595a543eabb428a44bb883c937610c28, type: 3}
+  bullet: {fileID: 1851277278159832293, guid: a9e81db17a1b89b438fce8657b3edd94, type: 3}
   gun: {fileID: 5316294034949048444}
 --- !u!114 &1478404324618377356
 MonoBehaviour:
@@ -172,7 +174,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  livesRemaining: 3
+  - {fileID: 0}
+  livesRemaining: 4
+  player: {fileID: 0}
 --- !u!70 &1478404324618377461
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -239,6 +243,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1161856461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478404324618377355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553ff96e7671def47a98389499be279d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 0}
+  maxExp: 100
+  level: 1
 --- !u!1 &5436121837793416330
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5316294034949048444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

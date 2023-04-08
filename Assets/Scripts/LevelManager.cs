@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    GameSession game;
+    int currentSceneIndex = 2;
     
+    private void Update() {
+        if (currentSceneIndex > 1)
+        {
+            currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        }
+    }
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);

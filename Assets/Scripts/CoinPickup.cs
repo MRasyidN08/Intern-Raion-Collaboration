@@ -13,5 +13,6 @@ public class CoinPickup : MonoBehaviour
             FindObjectOfType<GameSession>().addCoins(pointsForCoin);
             Destroy(gameObject);
         }
+        Destroy(gameObject);
     }
 }

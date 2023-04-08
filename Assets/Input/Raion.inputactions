@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "EnterShop",
+                    "type": "Button",
+                    "id": "646ae38c-c330-4ae8-bc1d-37f19962f32d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -297,11 +306,22 @@
                 {
                     "name": "",
                     "id": "b072fb0e-cd55-4f26-b802-109df6d836bf",
-                    "path": "<Keyboard>/1",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "ChangeWeapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "549ed9df-5b6c-4f96-9a16-5f9604c9d5eb",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnterShop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
