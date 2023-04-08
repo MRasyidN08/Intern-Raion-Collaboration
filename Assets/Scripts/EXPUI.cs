@@ -12,7 +12,7 @@ public class EXPUI : MonoBehaviour
     // public float maxExp=1f;
     public Image expBar;  // referensi ke komponen Image yang digunakan untuk menampilkan XP bar
     public TextMeshProUGUI levelText;  // referensi ke komponen teks yang digunakan untuk menampilkan level pemain
-    public float expAmount
+    public float expAmount;
     public PlayerStat Playerstat;
 
 //     // Update is called once per frame
@@ -70,4 +70,4 @@ public class EXPUI : MonoBehaviour
 //         expBar.fillAmount = Playerstat.currentExp / Playerstat.expToLevelUp;
 //         levelText.text = "Level " + Playerstat.level.ToString();
 //     }
-}
+
