@@ -24,8 +24,9 @@ public class BossBullet : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<LifeCount>().LoseLife(damage);
-            // Destroy(gameObject);
+            Destroy(gameObject);
         }
+        // Destroy(gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D other) {
