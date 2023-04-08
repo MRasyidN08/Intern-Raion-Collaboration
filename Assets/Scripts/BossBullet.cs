@@ -7,7 +7,7 @@ public class BossBullet : MonoBehaviour
     Rigidbody2D myRigidBody;
     
     public float speed = 10f;
-    public int damage = 10;
+    public int damage = 1;
     
     private void Start() {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -19,11 +19,12 @@ public class BossBullet : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            other.GetComponent<LifeCount>().LoseLife(damage);
+            // Destroy(gameObject);
         }
     }
 

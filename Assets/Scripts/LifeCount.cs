@@ -6,20 +6,21 @@ using UnityEngine.UI;
 public class LifeCount : MonoBehaviour
 {
     public Image[] lives;
+    public int FullLife = 4;
     public int livesRemaining;
-    public PlayerStat player;
     private Animator animasi;
     private bool Dead;
 
     private void Awake()
     {
+        livesRemaining = FullLife;
         animasi = GetComponent<Animator>();
     }
 
-    public void LoseLife()
+    public void LoseLife(int damage)
     {
         //decrease the value life
-        livesRemaining = Mathf.Clamp(livesRemaining--, 0, livesRemaining);
+        livesRemaining = Mathf.Clamp(livesRemaining - damage, 0, FullLife);
         //hiding one image of life count
         lives[livesRemaining].enabled = false;
         //if we run out the lives
@@ -27,27 +28,27 @@ public class LifeCount : MonoBehaviour
             animasi.SetTrigger("hurt");
         } else{
             if(!Dead){
-            animasi.SetTrigger("die");
-            GetComponent<PlayerMovement>().enabled = false;
-            Dead = true;
+                animasi.SetTrigger("die");
+                GetComponent<PlayerMovement>().enabled = false;
+                Dead = true;
             }
         }
     }
 
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.tag == "Enemy")
-    //     {
-    //         LoseLife();
-            
+    // public void addLife(int value){
+    //     livesRemaining = livesRemaining + value;
+    //     for(int i = 0; i<=livesRemaining; i++){
+    //         lives[i].enabled = true;
     //     }
+    //     // lives[livesRemaining].enabled = true;
     // }
 
-    // private void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Return)){
-    //         LoseLife();
-    //     }
+    // public void Respawn(){
+    //     Dead = false;
+    //     addLife(FullLife);
+    //     animasi.ResetTrigger("Die");
+    //     animasi.Play("Idle Player");
+    //     GetComponent<PlayerMovement>().enabled = true;
     // }
 
 }
