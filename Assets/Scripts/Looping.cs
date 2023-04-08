@@ -11,7 +11,7 @@ public class Looping : MonoBehaviour
 
     void Update()
     {
-        float x = player.myRigidbody.velocity.x / 100;
+        x = player.myRigidbody.velocity.x / 100;
         img.uvRect = new Rect(img.uvRect.position + new Vector2(x, y) * Time.deltaTime, img.uvRect.size);
     }
 }

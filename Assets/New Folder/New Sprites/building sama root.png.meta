@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bc6029edd5e0a84fa045f78011f3534
+guid: d911830acef554144857de8bdf302594
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,64 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: building_0
+      name: building sama root_0
       rect:
         serializedVersion: 2
         x: 2
         y: 2
         width: 163
         height: 260
-      alignment: 9
-      pivot: {x: 0.5106735, y: 0.69070846}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9448e2874d2f3d84ab74d7f7c973de8e
-      internalID: -142397065
+      spriteID: 14b253168b87c9244a73fdbe1b327ffd
+      internalID: -359308576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: building_1
+      name: building sama root_1
       rect:
         serializedVersion: 2
         x: 183
         y: 2
         width: 162
         height: 249
-      alignment: 9
-      pivot: {x: 0.49463004, y: 0.63100886}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b56ef79f62b31468942aac1151accd
-      internalID: 1022187760
+      spriteID: 724da32239d1d7c42ab0891c766162c2
+      internalID: 73172229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: building_2
+      name: building sama root_2
       rect:
         serializedVersion: 2
         x: 374
         y: 2
         width: 63
         height: 196
-      alignment: 9
-      pivot: {x: 0.4171501, y: 0.5022191}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0476ecd9b7166b84a82301fb279bd799
-      internalID: 1741651587
+      spriteID: cfadc7c92adb79a40bfae38a4730ed4c
+      internalID: 1362398618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building sama root_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 4
+        width: 138
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54df722a6f01de647a8f7ec018fbdf6c
+      internalID: -1870416323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building sama root_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3
+        width: 139
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59c3189bf1d2974798d5334d16f6f4b
+      internalID: -761968268
       vertices: []
       indices: 
       edges: []
@@ -178,9 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      building_0: -142397065
-      building_1: 1022187760
-      building_2: 1741651587
+      building sama root_0: -359308576
+      building sama root_1: 73172229
+      building sama root_2: 1362398618
+      building sama root_3: -1870416323
+      building sama root_4: -761968268
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
