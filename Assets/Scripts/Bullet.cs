@@ -6,8 +6,9 @@ public class Bullet : MonoBehaviour
 {
     Rigidbody2D myRigidBody;
     PlayerMovement player;
+    public int damage = 100;
     float xSpeed;
-
+    [SerializeField] int bossHealth;
     [SerializeField] float bulletSpeed = 5f;
 
     void Start()
