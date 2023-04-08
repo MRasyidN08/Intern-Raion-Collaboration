@@ -19,7 +19,7 @@ public class Boss : MonoBehaviour
         Instantiate(bulletPrefab, transform.GetChild(0).position, Quaternion.identity);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Bullet")
         {
             if (health <= 0)
