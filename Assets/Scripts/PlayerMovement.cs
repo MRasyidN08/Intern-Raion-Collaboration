@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -115,8 +116,8 @@ public class PlayerMovement : MonoBehaviour
         if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Trap")))
         {
             //health --
-            myRigidbody.velocity = new Vector2 (0f, 0f);
-            myAnimator.SetBool("isRunning", false);
+            // myRigidbody.velocity = new Vector2 (0f, 0f);
+            // myAnimator.SetBool("isRunning", false);
         }
     }
 
@@ -158,6 +159,14 @@ public class PlayerMovement : MonoBehaviour
             currentWeapon -=1;
             myAnimator.SetLayerWeight(currentWeapon + 1, 0);
             myAnimator.SetLayerWeight(currentWeapon - 1, 0);
+        }
+    }
+
+    void OnEnterShop(InputValue input)
+    {
+        if(myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Shop")))
+        {
+            SceneManager.LoadScene(1);
         }
     }
 }

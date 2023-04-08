@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     int currentSceneIndex = 2;
     
     private void Update() {
-        if (currentSceneIndex > 1)
+        if (SceneManager.GetActiveScene().buildIndex > 1)
         {
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         }
@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
     
     public void LoadGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
     
     public void GoToShop()

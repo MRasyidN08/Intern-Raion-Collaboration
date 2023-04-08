@@ -22,7 +22,7 @@ TagManager:
   - Coin
   - Exit
   - Sword
-  - 
+  - Shop
   - 
   - 
   - 
@@ -52,6 +52,9 @@ TagManager:
     locked: 0
   - name: Terrain
     uniqueID: 88529255
+    locked: 0
+  - name: Shop
+    uniqueID: 995145909
     locked: 0
   - name: Player
     uniqueID: 1387243711

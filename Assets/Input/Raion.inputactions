@@ -53,7 +53,7 @@
                 {
                     "name": "EnterShop",
                     "type": "Button",
-                    "id": "646ae38c-c330-4ae8-bc1d-37f19962f32d",
+                    "id": "cd56fcf9-c14f-4fbe-94ec-3136b9a5096a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -316,7 +316,7 @@
                 },
                 {
                     "name": "",
-                    "id": "549ed9df-5b6c-4f96-9a16-5f9604c9d5eb",
+                    "id": "038b631e-11b1-4202-985a-6f303807791a",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
