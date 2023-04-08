@@ -7,7 +7,7 @@ public class BossBullet : MonoBehaviour
     Rigidbody2D myRigidBody;
     
     public float speed = 10f;
-    public int damage = 1;
+    public int damage;
     
     private void Start() {
         myRigidBody = GetComponent<Rigidbody2D>();
