@@ -25,9 +25,14 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(2);
     }
     
+    public void SkipCutscene()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void LoadGame()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
     }
     
     public void GoToShop()
