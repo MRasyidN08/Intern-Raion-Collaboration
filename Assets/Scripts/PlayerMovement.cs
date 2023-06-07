@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     float maxJump = 2;
     int currentWeapon;
     BuyWeapon buy;
+    Vector2 playerResPost;
+    private bool damaged = false;
 
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpPower = 5f;
@@ -28,14 +30,19 @@ public class PlayerMovement : MonoBehaviour
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
         myFeet = GetComponent<BoxCollider2D>();
         myAnimator = GetComponent<Animator>();
+        playerResPost = transform.position;
     }
 
     void Update()
     {
         Run();
         Flip();
-        Trapped();
+        if (!damaged)
+        {
+            StartCoroutine(Trapped());   
+        }
         jumpAnimation();
+        Checkpoint();
     }
 
     void OnMove(InputValue value)
@@ -111,13 +118,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Trapped()
+    IEnumerator Trapped()
     {
         if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Trap")))
         {
-            //health --
-            // myRigidbody.velocity = new Vector2 (0f, 0f);
-            // myAnimator.SetBool("isRunning", false);
+            damaged = true;
+            transform.position = playerResPost;
+            FindObjectOfType<LifeCount>().LoseLife(1);
+            yield return new WaitForSeconds(2f);
+            damaged = false;
         }
     }
 
@@ -167,6 +176,13 @@ public class PlayerMovement : MonoBehaviour
         if(myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Shop")))
         {
             SceneManager.LoadScene(1);
+        }
+    }
+
+    private void Checkpoint() {
+        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Checkpoint")))
+        {
+            playerResPost = transform.position;
         }
     }
 }

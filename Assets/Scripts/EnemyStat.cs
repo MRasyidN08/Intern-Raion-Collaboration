@@ -12,7 +12,6 @@ public class EnemyStat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Memberikan damage ke player
         if(collision.tag == "Player"){
             collision.GetComponent<LifeCount>().LoseLife(damage);
         }
@@ -20,14 +19,7 @@ public class EnemyStat : MonoBehaviour
 
     public void Die()
     {
-        // Mendapatkan objek game player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        PlayerStat exp = player.GetComponent<PlayerStat>();
-
-        // Menambahkan nilai XP
-        exp.GainExp(expValue);
-        
-        // Menghancurkan objek musuh
         Destroy(gameObject);
     }
 }

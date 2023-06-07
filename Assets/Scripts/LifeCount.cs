@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LifeCount : MonoBehaviour
 {
@@ -19,11 +20,8 @@ public class LifeCount : MonoBehaviour
 
     public void LoseLife(int damage)
     {
-        //decrease the value life
         livesRemaining = Mathf.Clamp(livesRemaining - damage, 0, FullLife);
-        //hiding one image of life count
         lives[livesRemaining].enabled = false;
-        //if we run out the lives
         if(livesRemaining > 0){
             animasi.SetTrigger("hurt");
         } else{
@@ -31,24 +29,14 @@ public class LifeCount : MonoBehaviour
                 animasi.SetTrigger("die");
                 GetComponent<PlayerMovement>().enabled = false;
                 Dead = true;
+                StartCoroutine(LoadLoseScene());
             }
         }
     }
 
-    // public void addLife(int value){
-    //     livesRemaining = livesRemaining + value;
-    //     for(int i = 0; i<=livesRemaining; i++){
-    //         lives[i].enabled = true;
-    //     }
-    //     // lives[livesRemaining].enabled = true;
-    // }
-
-    // public void Respawn(){
-    //     Dead = false;
-    //     addLife(FullLife);
-    //     animasi.ResetTrigger("Die");
-    //     animasi.Play("Idle Player");
-    //     GetComponent<PlayerMovement>().enabled = true;
-    // }
-
+    IEnumerator LoadLoseScene()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        SceneManager.LoadScene(9);
+    }
 }

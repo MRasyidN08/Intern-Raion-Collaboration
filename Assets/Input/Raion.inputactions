@@ -229,7 +229,7 @@
                 {
                     "name": "",
                     "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -305,6 +305,17 @@
                 },
                 {
                     "name": "",
+                    "id": "62bbf2a9-bc7f-4533-921f-0ef67dfc2078",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b072fb0e-cd55-4f26-b802-109df6d836bf",
                     "path": "<Keyboard>/q",
                     "interactions": "",
@@ -316,11 +327,33 @@
                 },
                 {
                     "name": "",
+                    "id": "f1c7c935-d066-4517-8ea3-f57daca20a2a",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "ChangeWeapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "038b631e-11b1-4202-985a-6f303807791a",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "EnterShop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "acd5767f-d5fa-4f44-9c76-2fbbb7cf2bd4",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "EnterShop",
                     "isComposite": false,
                     "isPartOfComposite": false

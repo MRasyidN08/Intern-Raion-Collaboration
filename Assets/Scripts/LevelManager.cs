@@ -5,13 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    int currentSceneIndex = 2;
+    int currentSceneIndex = 3;
     
-    private void Update() {
-        if (SceneManager.GetActiveScene().buildIndex > 1)
+    // private void Update() {
+    //     if (SceneManager.GetActiveScene().buildIndex > 1)
+    //     {
+    //         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    //     }
+    // }
+
+    void Start() {
+        if (SceneManager.GetActiveScene().buildIndex >= 3 && SceneManager.GetActiveScene().buildIndex < 8)
         {
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("scene", currentSceneIndex);
         }
+    }
+
+    public void LoadScene() {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("scene"));
     }
 
     public void LoadMainMenu()
